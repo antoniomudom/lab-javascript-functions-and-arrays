@@ -1,3 +1,6 @@
+
+//Este Lab me ha parecido muy largo y complejo en comparación a las actividades de clase.
+
 // Iteration #1: Find the maximum
 function maxOfTwoNumbers(num1, num2) {
   if(num1>num2){
@@ -63,9 +66,26 @@ function sum() {}
 
 // Iteration #4: Calculate the average
 // Level 1: Array of numbers
-const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
+//  
 
-function averageNumbers() {}
+function averageNumbers(numbers) {//la llamo numbers porque la funcion espera que le dé un array de numeros cuando la llame
+  if(numbers.length === 0){
+    return null;
+  }
+   let sum=0;//la usaré para almacenar la suma de todos los numeros de la matriz
+
+   for(let i=0;i<numbers.length;i++){
+
+   let sum = sum + numbers[i];
+ }
+   let average= sum/numbers.length;
+   return average;
+ }
+const numeros = [2, 6, 9, 10, 7, 4, 1, 9];
+
+ console.log(averageNumbers(numbers));//Hasta aquí he podido llegar
+
+
 
 
 // Level 2: Array of strings
